@@ -67,9 +67,9 @@ function displayInfo(e) {
     // Afficher la section des informations utilisateur
     document.getElementById("userInfo").style.display = "block";
 
-    // Optionnel : faire défiler jusqu'aux informations affichées
+    // Faire défiler jusqu'aux informations affichées
     document.getElementById("userInfo").scrollIntoView({ behavior: "smooth" });
 
-    // Optionnel : masquer le formulaire
+    // Masquer le formulaire
     document.getElementById("inscriptionForm").style.display = "none";
 }
