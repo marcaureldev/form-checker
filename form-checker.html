@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la formation DCLIC</title>
+    <link rel="stylesheet" href="form-checker.css">
+</head>
+<body>
+
+    <h1>Inscription à la formation DCLIC</h1>
+
+    <div class="container">
+        <form action="#" id="inscriptionForm">
+            <label for="nom">Nom</label>
+            <input type="text" id="firstName" name="nom" required>
+
+            <label for="prenoms">Prénoms</label>
+            <input type="text" id="lastName" name="prenoms" required>
+
+            <label for="date_naissance">Date de naissance</label>
+            <input type="date" id="birthday" name="date_naissance" required>
+
+            <label for="telephone">Numéro de téléphone</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="motivation" minlength="1000" maxlength="2500">Motivation</label>
+            <textarea id="motivation" name="motivation" rows="3" required placeholder="Minimum 1000 caractères, maximum 2500 caractères"></textarea>
+
+            <input type="submit" id="submit" value="S'inscrire">
+        </form>
+
+
+        <div id="userInfo" style="display: none;">
+            <h2>Informations de l'inscription</h2>
+            <p><strong>Nom :</strong> <span id="displayLastName"></span></p>
+            <p><strong>Prénom :</strong> <span id="displayFirstName"></span></p>
+            <p><strong>Date de naissance :</strong> <span id="displayBirthday"></span></p>
+            <p><strong>Téléphone :</strong> <span id="displayTelephone"></span></p>
+            <p><strong>Motivation :</strong> <span id="displayMotivation"></span></p>
+        </div>
+    </div>
+
+
+    <script src="/form-checker.js"></script>
+</body>
+</html>
